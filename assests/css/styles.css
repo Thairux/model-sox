@@ -1,8 +1,16 @@
-/* C:\xampp\htdocs\project-ai-gen\model-sox\assests\css\styles.css */
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f7f7f7;
 }
 
 header {
@@ -37,7 +45,7 @@ main {
 }
 
 .post-feed {
-    background-color: #f7f7f7;
+    background-color: #fff;
     padding: 2em;
     margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -85,7 +93,72 @@ footer {
     color: #666;
 }
 
-/* Responsive design */
+/* Login and Register Pages */
+
+.login-register-container {
+    width: 300px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-register-form {
+    margin-top: 20px;
+}
+
+.login-register-form input[type="text"], .login-register-form input[type="email"], .login-register-form input[type="password"] {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-register-form input[type="submit"] {
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-register-form input[type="submit"]:hover {
+    background-color: #444;
+}
+
+/* Dashboard */
+
+.dashboard-container {
+    width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.dashboard-content {
+    padding: 20px;
+}
+
+/* Responsive Design */
+
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -98,5 +171,11 @@ footer {
     }
     .post-feed, .suggested-models {
         width: 100%;
+    }
+    .login-register-container {
+        width: 90%;
+    }
+    .dashboard-container {
+        width: 90%;
     }
 }
